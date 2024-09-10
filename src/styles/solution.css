@@ -76,6 +76,10 @@
     color: black;
 }
 
+.text-p {
+    margin-top: 2rem;
+}
+
 @media (width >= 1280px) {
    .container {
     --max-width: 1050px;

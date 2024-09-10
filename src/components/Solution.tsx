@@ -35,21 +35,18 @@ export default function Solution() {
                     </section>
                     <section className='even-columns'>
                         <div>
-                            <h2 className='text-h2'>Estudantes</h2>
+                            <h2 >Estudantes</h2>
                             <p className='text-p'>Port ajuda todos com suas ferramentas únicas e sofisticadas para a melhor experiência para a sua vida </p>
                         </div>
                         <div>
-                        <h2 className='text-h2'>Empresas</h2>
-                        <p className='text-p'>Port ajuda todos com suas ferramentas únicas e sofisticadas para a melhor experiência para a sua vida </p>
+                            <h2 >Empresas</h2>
+                            <p className='text-p'>Port ajuda todos com suas ferramentas únicas e sofisticadas para a melhor experiência para a sua vida </p>
                         </div>
                         <div>
-                        <h2 className='text-h2'>Profissionais</h2>
-                        <p className='text-p'>Port ajuda todos com suas ferramentas únicas e sofisticadas para a melhor experiência para a sua vida </p>
+                            <h2 >Profissionais</h2>
+                            <p className='text-p'>Port ajuda todos com suas ferramentas únicas e sofisticadas para a melhor experiência para a sua vida </p>
                         </div>
                     </section>
-
-
-
                 </div>
             </section>
         </>
