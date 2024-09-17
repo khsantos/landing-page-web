@@ -1,4 +1,4 @@
-# exemplo deu um netlify.toml
+# exemplo de um netlify.toml
 [build]
   command = "vite build"
   functions = "netlify/functions"

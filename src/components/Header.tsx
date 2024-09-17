@@ -1,7 +1,7 @@
 import '../styles/header.css';
 import '../styles/utility.css'
 import portLogo from "../assets/logo.svg";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Button from './Button';
 import Close from '../assets/close.svg'
 import Menu from '../assets/menu.svg'
@@ -9,6 +9,20 @@ import Menu from '../assets/menu.svg'
 export default function Header() {
 
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+    useEffect(() => {
+
+        if (showMobileMenu === true) {
+            document.documentElement.style.overflowY = "hidden";
+        } else {
+            document.documentElement.style.overflowY = "auto";
+        }
+
+        return () => {
+            document.body.style.overflowY = "auto";
+            document.documentElement.style.overflowY = "auto";
+        };
+    }, [showMobileMenu])
 
     return (
         <>
@@ -67,13 +81,13 @@ export default function Header() {
                                             <a className='reverse-color' href="#login">Login</a>
                                         </li>
                                     </ul>
-                                    <span onClick={() => setShowMobileMenu(!showMobileMenu)} className="btn-wrapper">
+                                    <span onClick={() => setShowMobileMenu(false)} className="btn-wrapper">
                                         <img src={Close} alt="ícone fechar menu" width={24} height={24} />
                                     </span>
                                 </div>
                             </div>
                             :
-                            <span onClick={() => setShowMobileMenu(!showMobileMenu)} className="btn-wrapper" >
+                            <span onClick={() => setShowMobileMenu(true)} className="btn-wrapper" >
                                 <img src={Menu} alt="ícone menu" width={24} height={24} />
                             </span>
                         }

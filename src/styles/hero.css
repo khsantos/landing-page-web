@@ -3,7 +3,6 @@
     border-top: 0.125rem solid #e4e4e4;
     height: 90vh;
     display: flex;
-    padding-top: 8rem;
 }
 
 #hero>img {
@@ -36,6 +35,7 @@
     #hero {
         background: var(--bg-color);
         border-top: none;
+        padding: 8rem;
 
         >span {
             position: absolute;
