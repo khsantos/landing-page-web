@@ -36,7 +36,7 @@ export default function Header() {
                                 <a href="#">Home</a>
                             </li>
                             <li>
-                                <a href="#solution">Soluções</a>
+                                <a href="#">Soluções</a>
                             </li>
                             <li>
                                 <a href="#testimonials">Depoimentos</a>
@@ -66,7 +66,7 @@ export default function Header() {
                                             <a href="#">Home</a>
                                         </li>
                                         <li>
-                                            <a href="#solution">Soluções</a>
+                                            <a href="#">Soluções</a>
                                         </li>
                                         <li>
                                             <a href="#testimonials">Depoimentos</a>
