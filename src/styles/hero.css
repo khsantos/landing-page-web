@@ -35,7 +35,7 @@
     #hero {
         background: var(--bg-color);
         border-top: none;
-        padding: 8rem;
+        padding-top: 8rem;
 
         >span {
             position: absolute;
