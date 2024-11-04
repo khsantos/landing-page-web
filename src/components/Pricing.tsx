@@ -50,7 +50,7 @@ export const Pricing = () => {
         <>
             <section id="pricing">
                 <h2 className='desktop-only'>
-                    Nossos planos</h2>
+                    Planos e preços</h2>
 
                 <h1>Nossos planos</h1>
             </section>
