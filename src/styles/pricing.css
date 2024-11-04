@@ -1,0 +1,9 @@
+.pricing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f7f8fa;
+    flex-wrap: wrap;
+}

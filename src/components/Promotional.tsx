@@ -7,7 +7,7 @@ import axios from 'axios'
 export const Promotional = () => {
     const [to, setTo] = useState('');
     const [subject, setSubject] = useState('');
-    const [text, setText] = useState('Obrigado por se inscrever nas notícias e promoções de Port\nAqui está algumas das promoções que separamos\n Produto A: R$55,99\nProduto B:R$39,99 \nProduto C:R$13,45',)
+    const [text, setText] = useState('Obrigado por se inscrever nas notícias e promoções de Port\nAqui está algumas das promoções que separamos\nProduto A: R$55,99\nProduto B:R$39,99 \nProduto C:R$13,45',)
 
     const AUTH_TOKEN = import.meta.env.VITE_AUTH_TOKEN;
 
