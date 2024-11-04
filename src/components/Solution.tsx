@@ -14,14 +14,16 @@ export default function Solution() {
                         Qualidade e Autonomia garantida
                     </h1>
                     <p>Inovação é com a gente! A Port já conquistou diversos clientes,
-                        seja você mais um deles, veja tudo que pode ganhar com nossos serviços</p>
+                        seja você mais um deles, veja tudo que pode ganhar com nossos serviços:</p>
 
                     <section className='even-columns'>
+
                         <div className="card img-1">
                             <div className='text-border'>
                                 <a href='#'><p className='card-text'>Tente Agora</p></a>
                             </div>
                         </div>
+
                         <div className="card img-2">
                             <div className='text-border'>
                                 <a href='#'><p className='card-text'>Tente Agora</p></a>
@@ -36,15 +38,12 @@ export default function Solution() {
                     <section className='even-columns'>
                         <div>
                             <h2 >Estudantes</h2>
-                            <p className='text-p'>Port ajuda todos com suas ferramentas únicas e sofisticadas para a melhor experiência para a sua vida </p>
                         </div>
                         <div>
                             <h2 >Empresas</h2>
-                            <p className='text-p'>Port ajuda todos com suas ferramentas únicas e sofisticadas para a melhor experiência para a sua vida </p>
                         </div>
                         <div>
                             <h2 >Profissionais</h2>
-                            <p className='text-p'>Port ajuda todos com suas ferramentas únicas e sofisticadas para a melhor experiência para a sua vida </p>
                         </div>
                     </section>
                 </div>

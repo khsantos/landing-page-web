@@ -1,5 +1,5 @@
 #solution {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding-block: 4rem;
@@ -20,7 +20,7 @@
 #solution h2 {
     font-size: 1.1rem;
     color: var(--primary-color);
-    margin-bottom: -1rem;
+    margin-bottom: -6rem;
 }
 
 #solution .content {
@@ -77,11 +77,16 @@
 }
 
 .text-p {
-    margin-top: 2rem;
+    margin-top: 8rem;
+    text-align: justify;
 }
 
-@media (width >= 1280px) {
-   .container {
-    --max-width: 1050px;
-   }
+.perfil-card {
+    display: flex !important;
+}
+
+@media (width >=1280px) {
+    .container {
+        --max-width: 1050px;
+    }
 }

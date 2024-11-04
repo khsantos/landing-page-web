@@ -7,3 +7,21 @@
     background-color: #f7f8fa;
     flex-wrap: wrap;
 }
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+#pricing h2 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: -4rem;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

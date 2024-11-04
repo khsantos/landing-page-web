@@ -1,5 +1,7 @@
 import { PricingCard } from "./PricingCards";
 import '../styles/pricing.css'
+import '../styles/index.css'
+import '../styles/utility.css'
 
 export const Pricing = () => {
     const plans = [
@@ -45,10 +47,20 @@ export const Pricing = () => {
     ];
 
     return (
-        <div className="pricing-page">
-            {plans.map((plan, index) => (
-                <PricingCard key={index} {...plan} />
-            ))}
-        </div>
+        <>
+            <section id="pricing">
+                <h2 className='desktop-only'>
+                    Nossos planos</h2>
+
+                <h1>Nossos planos</h1>
+            </section>
+            <div className="pricing-page">
+                {plans.map((plan, index) => (
+                    <PricingCard key={index} {...plan} />
+                ))}
+            </div>
+
+
+        </>
     );
 };

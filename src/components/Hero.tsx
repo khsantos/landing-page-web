@@ -10,7 +10,7 @@ export default function Hero() {
         <>
             <section id="hero">
                 <span className="desktop-only">
-                    <img src={rectangle2} alt="Retangulo um tela inicial" />
+                    <img src={rectangle2} alt="Retangulo um tela inicial" className='retangulo-dois' />
                 </span>
                 <img src={rectangle1} alt="Retangulo dois tela inicial" />
 
@@ -27,7 +27,7 @@ export default function Hero() {
                         <span> <Button text='Cadastre-se' /> </span>
 
                         <span className='desktop-only'><Button text='Veja Mais' secondary /> </span>
-                        
+
                     </div>
                 </div>
             </section>
