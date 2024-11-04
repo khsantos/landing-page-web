@@ -1,0 +1,85 @@
+#promotional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 4rem;
+    gap: 5.75rem;
+    min-height: auto;
+}
+
+#promotional header {
+    text-align: center;
+    max-width: 33rem;
+}
+
+#promotional p {
+    color: var(--second-text-color);
+    margin-top: -4rem;
+}
+
+#promotional h2 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: -3rem;
+}
+
+#promotional .content {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.75rem;
+}
+
+#promotional h1 {
+    margin-top: -2rem;
+}
+
+@media (width >=1280px) {
+    .container {
+        --max-width: 1050px;
+    }
+}
+
+#promotional .emailInput {
+    border-radius: 5px;
+    border-style: solid;
+    width: 900px;
+    height: 50px;
+    background-color: #f3f6f4;
+    margin-top: -3rem;
+    padding: 1.5rem;
+}
+
+#promotional .button {
+    width: 156px;
+    height: 52px;
+    margin-top: -3rem !important;
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    border-style: none;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    margin: auto;
+}
+
+#promotional .button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #1e90ff, #63c1ff);
+}
+
+#promotional .button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #006bb3;
+}
+
+#promotional form {
+    display: grid;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+}
