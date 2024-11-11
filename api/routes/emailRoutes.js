@@ -15,6 +15,6 @@ const authenticateToken = (req, res, next) => {
     next();
 };
 
-router.post('/', authenticateToken, sendEmail);
+router.post('/api', authenticateToken, sendEmail);
 
 export default router;
