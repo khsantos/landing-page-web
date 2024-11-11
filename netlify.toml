@@ -6,6 +6,6 @@
 
 # Redirecionamento de todas as rotas para /index.html
 [[redirects]]
-  from = "/*"
+  from = "/backend/*"
   to = "/index.html"
   status = 200
