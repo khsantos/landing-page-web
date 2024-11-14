@@ -74,7 +74,6 @@ export const Testimonials = () => {
                         profileRole={testimonials[currentIndex].profileRole}
                     ></ProfileTestimonials>
                 </div>
-
             </div>
         </section>
     );
