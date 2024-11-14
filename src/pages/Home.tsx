@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import { Pricing } from "../components/Pricing";
 import { Promotional } from "../components/Promotional";
 import Solution from "../components/Solution";
+import { Testimonials } from "../components/Testimonials";
 import '../styles/utility.css';
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
             <Header />
             <Hero />
             <Solution />
+            <Testimonials />
             <Pricing />
             <Promotional />
             <Footer />
