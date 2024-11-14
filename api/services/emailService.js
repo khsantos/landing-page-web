@@ -1,6 +1,6 @@
-import sgMail from "../config/sendgrid.js"
+import sgMail from "../config/sendgrid.js";
 
-const sendEmail = async ({ to, subject, text }) => {
+const sendEmailService = async ({ to, subject, text }) => {
     const msg = {
         to,
         from: 'kaauhheidemann@hotmail.com',
@@ -18,4 +18,4 @@ const sendEmail = async ({ to, subject, text }) => {
     }
 }
 
-export default sendEmail;
+export default sendEmailService;

@@ -1,25 +1,16 @@
-import sgMail from '@sendgrid/mail';
 import dotenv from 'dotenv';
+import sendEmailService from '../services/emailService.js';
 
 dotenv.config();
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
-export const sendEmail = async (req, res) => {
+export const sendEmailController = async (req, res) => {
     const { to, subject, text } = req.body;
 
-    const msg = {
-        to,
-        from: 'kaauhheidemann@hotmail.com',
-        subject,
-        text,
-    };
+    const result = await sendEmailService({ to, subject, text });
 
-    try {
-        await sgMail.send(msg);
-        res.status(200).json({ message: 'E-mail enviado com sucesso!' });
-    } catch (error) {
-        console.error('Erro ao enviar e-mail:', error);
-        res.status(500).json({ error: 'Erro ao enviar o e-mail.' });
+    if (result.success) {
+        return res.status(200).json({ message: result.message });
+    } else {
+        return res.status(500).json({ message: result.message });
     }
 };

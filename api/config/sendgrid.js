@@ -1,10 +1,8 @@
-import dotenv from 'dotenv'
 import sgMail from '@sendgrid/mail';
-dotenv.config();
+import dotenv from 'dotenv';
 
-import pkg from '@sendgrid/mail'
-const { setApiKey, send } = pkg;
+dotenv.config();
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-export default { send };
+export default sgMail;

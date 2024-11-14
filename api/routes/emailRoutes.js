@@ -1,9 +1,8 @@
 import express from 'express';
-import { sendEmail } from '../controllers/emailController.js';
+import { sendEmailController } from '../controllers/emailController.js';
 
 const router = express.Router();
 
-// Defina o token fixo
 const TOKEN = process.env.AUTH_TOKEN;
 
 const authenticateToken = (req, res, next) => {
@@ -15,6 +14,6 @@ const authenticateToken = (req, res, next) => {
     next();
 };
 
-router.post('/', authenticateToken, sendEmail);
+router.post('/', authenticateToken, sendEmailController);
 
 export default router;
