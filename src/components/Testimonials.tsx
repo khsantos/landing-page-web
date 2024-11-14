@@ -59,8 +59,9 @@ export const Testimonials = () => {
                     <p>Dê uma olhada em o que outros inscritos têm a falar sobre Port.</p>
 
                     <div className="navigation-buttons">
-                        <button className="navigation-button" onClick={handlePreviousTestimonial}>&larr;</button>
-                        <button className="navigation-button" onClick={handleNextTestimonial}>&rarr;</button>
+                        <button className="navigation-button previous" onClick={handlePreviousTestimonial}>
+                        </button>
+                        <button className="navigation-button next" onClick={handleNextTestimonial}></button>
                     </div>
                 </div>
 

@@ -47,10 +47,21 @@
     font-size: 1.25rem;
     cursor: pointer;
     transition: background 0.3s;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #testimonials .navigation-button:hover {
-    background: #f0f0f0;
+    opacity: 0.7;
+}
+
+#testimonials .navigation-button.previous {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/271/271218.png');
+}
+
+#testimonials .navigation-button.next {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/271/271226.png');
 }
 
 #testimonials .right-section {
@@ -113,8 +124,7 @@
     animation: fadeIn 0.5s ease-in;
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
     #testimonials .testimonial-container {
         flex-direction: column;
         align-items: center;
@@ -129,10 +139,11 @@
 
     #testimonials .left-section h2 {
         font-size: 3rem;
+        margin-right: 1rem;
     }
 
     #testimonials .left-section p {
-        font-size: 1rem;
+        display: none;
     }
 
     #testimonials .right-section {
@@ -141,28 +152,24 @@
         margin-top: 2rem;
     }
 
-    /* Move os botões de navegação abaixo do perfil */
-    #testimonials .navigation-buttons {
+    .navigation-buttons {
         margin-top: 1.5rem;
         justify-content: center;
         order: 1;
-        /* Faz os botões virem após o perfil */
     }
 
-    /* Centraliza o perfil e os botões */
     #testimonials .right-section .profile {
         flex-direction: column;
         text-align: center;
     }
 
-    #testimonials .navigation-buttons {
+    .navigation-buttons {
         order: 2;
-        /* Garante que os botões venham depois do perfil */
         margin-top: 2rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     #testimonials .left-section h2 {
         font-size: 2.5rem;
     }
