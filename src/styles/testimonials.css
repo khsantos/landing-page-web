@@ -60,7 +60,6 @@
 
 #testimonials .quote {
     font-size: 1.75rem;
-    font-style: italic;
     color: #333;
     line-height: 1.5;
     position: relative;
@@ -96,6 +95,47 @@
 .profile-role {
     font-size: 0.875rem;
     color: #666;
+}
+
+@media (max-width: 768px) {
+    #testimonials .testimonial-container {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    #testimonials .left-section,
+    .right-section {
+        text-align: center;
+    }
+
+    #testimonials .navigation-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    #testimonials h2 {
+        font-size: 1.5rem;
+    }
+
+    #testimonials .quote p {
+        font-size: 1rem;
+    }
+
+    #testimonials .profile-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    #testimonials .profile-name {
+        font-size: 1rem;
+    }
+
+    #testimonials .profile-role {
+        font-size: 0.875rem;
+    }
 }
 
 @keyframes fadeIn {

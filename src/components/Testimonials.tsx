@@ -9,22 +9,22 @@ export const Testimonials = () => {
         {
             quote: 'Port tem me ajudado a economizar meu tempo e conseguir atingir meus objetivos facilmente.”',
             imageSrc: 'https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?q=80&w=1686&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            alt: 'Kyle Weznicks',
-            profileName: 'Kyle Weznicks',
+            alt: 'Pedro Cardoso',
+            profileName: 'Pedro Cardoso',
             profileRole: 'Engineer'
         },
         {
             quote: 'Port revolucionou a forma como trabalho e gerencio meu tempo, conseguindo fazer mais sem exigir muito de si.”',
             imageSrc: 'https://plus.unsplash.com/premium_photo-1674814949504-1360b9119de2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29uJTIwcGljdHVyZXxlbnwwfHwwfHx8MA%3D%3D',
-            alt: 'Jane Doe',
-            profileName: 'Jane Doe',
+            alt: 'Mayara Klasnok',
+            profileName: 'Mayara Klasnok',
             profileRole: 'Product Manager'
         },
         {
             quote: 'A plataforma Port me deu a liberdade de trabalhar de onde eu quiser e ainda manter alta produtividade.”',
             imageSrc: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&q=80&w=1686&auto=format&fit=crop&ixlib=rb-4.0.3',
-            alt: 'John Smith',
-            profileName: 'John Smith',
+            alt: 'João da Silva Rocha',
+            profileName: 'João da Silva Rocha',
             profileRole: 'Freelance Designer'
         },
     ]
