@@ -46,7 +46,7 @@ export const Testimonials = () => {
         setTimeout(() => {
             setCurrentIndex((prevIndex) => prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1);
             setFadeClass('fade-in');
-        }, 10);
+        }, 700);
     };
 
     const handlePreviousTestimonial = () => {
@@ -55,7 +55,7 @@ export const Testimonials = () => {
         setTimeout(() => {
             setCurrentIndex((prevIndex) => prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1);
             setFadeClass('fade-in');
-        }, 10)
+        }, 700)
     }
 
     return (

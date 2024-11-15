@@ -121,7 +121,7 @@
 }
 
 .fade-in {
-    animation: fadeIn 0.8s ease-in;
+    animation: fadeIn 0.5s ease-in;
 }
 
 @media (max-width: 1280px) {
