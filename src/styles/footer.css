@@ -26,6 +26,15 @@
     color: var(--primary-color);
 }
 
+.footer-section a {
+    color: var(--second-text-color);
+
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
 .footer-section p,
 .footer-section ul {
     font-size: 14px;

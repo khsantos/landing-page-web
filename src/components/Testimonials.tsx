@@ -2,7 +2,7 @@ import '../styles/testimonials.css';
 import '../styles/index.css';
 import '../styles/utility.css';
 import { ProfileTestimonials } from './ProfileTestimonials';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export const Testimonials = () => {
     const testimonials = [
@@ -32,6 +32,14 @@ export const Testimonials = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [fadeClass, setFadeClass] = useState('fade-in');
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            handleNextTestimonial();
+        }, 4000);
+
+        return () => clearInterval(interval);
+    }, [])
+
     const handleNextTestimonial = () => {
         setFadeClass('');
 
@@ -59,8 +67,7 @@ export const Testimonials = () => {
                     <p>Dê uma olhada em o que outros inscritos têm a falar sobre Port.</p>
 
                     <div className="navigation-buttons">
-                        <button className="navigation-button previous" onClick={handlePreviousTestimonial}>
-                        </button>
+                        <button className="navigation-button previous" onClick={handlePreviousTestimonial}></button>
                         <button className="navigation-button next" onClick={handleNextTestimonial}></button>
                     </div>
                 </div>

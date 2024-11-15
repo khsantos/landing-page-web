@@ -121,7 +121,7 @@
 }
 
 .fade-in {
-    animation: fadeIn 0.5s ease-in;
+    animation: fadeIn 0.8s ease-in;
 }
 
 @media (max-width: 1280px) {
@@ -141,45 +141,18 @@
         font-size: 3rem;
     }
 
-    #testimonials .left-section p {
-        display: none;
-    }
-
     #testimonials .right-section {
         max-width: 100%;
         padding-left: 0;
         margin-top: 2rem;
     }
 
-    .navigation-buttons {
-        margin-top: 1.5rem;
-        justify-content: center;
-        order: 1;
+    #testimonials .navigation-buttons {
+        display: none;
     }
 
     #testimonials .right-section .profile {
         flex-direction: column;
         text-align: center;
-    }
-
-    .navigation-buttons {
-        order: 2;
-        margin-top: 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    #testimonials .left-section h2 {
-        font-size: 2.5rem;
-    }
-
-    #testimonials .left-section p {
-        font-size: 0.875rem;
-    }
-
-    #testimonials .navigation-button {
-        width: 35px;
-        height: 35px;
-        font-size: 1.125rem;
     }
 }

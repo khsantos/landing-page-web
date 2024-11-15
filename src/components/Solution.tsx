@@ -14,6 +14,7 @@ const Card = ({ title, imageUrl, buttonText }: CardProps) => {
             <div className="card">
                 <h3 className='card-title'>{title}</h3>
                 <img src={imageUrl} alt={title} className="card-image" />
+                <p className='p'>A melhor oferta para quem está a procura de rapidez e confortabilidade</p>
                 <button className="card-button">{buttonText}</button>
             </div>
         </>
