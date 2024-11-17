@@ -6,8 +6,8 @@ import axios from 'axios'
 
 export const Promotional = () => {
     const [to, setTo] = useState('');
-    const [subject, setSubject] = useState('');
-    const [text, setText] = useState('Obrigado por se inscrever nas notícias e promoções de Port\nAqui está algumas das promoções que separamos\nProduto A: R$55,99\nProduto B:R$39,99 \nProduto C:R$13,45',)
+    const [subject] = useState('Inscrição de notícias e promoções Port.');
+    const [text, setText] = useState('');
 
     const AUTH_TOKEN = import.meta.env.VITE_AUTH_TOKEN;
 
@@ -41,7 +41,7 @@ export const Promotional = () => {
                 <p>Interessado em saber mais sobre nossos produtos? Se inscreva em nosso programa e receba e-mails de promoções e ofertas que podem te interessar!</p>
 
                 <input name="to" onChange={(e) => setTo(e.target.value)} type='email' className='emailInput' placeholder='Informe seu e-mail'></input>
-                <input name="subject" onChange={(e) => setSubject(e.target.value)} className='emailInput' placeholder='Motivo do contato. Ex: Gostaria de mais informações sobre produto A'></input>
+                <input name="text" onChange={(e) => setText(e.target.value)} className='emailInput' placeholder='Motivo do contato. Ex: Gostaria de mais informações sobre produto A'></input>
                 <button onClick={handleSendEmail} type='button' className='button'>Enviar</button>
 
             </section >
